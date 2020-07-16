@@ -22,7 +22,13 @@ export class _Blank extends React.Component {
     }
   }
 
-  state = { Input_4: "", Input_6: "46454654654654646546546" }
+  state = {
+    Input_4: "",
+    Input_6: "46454654654654646546546",
+    Radio_10: true,
+    CheckBox_14: true,
+    Toggle_19: true
+  }
 
   render = () => (
     <View
@@ -191,6 +197,147 @@ export class _Blank extends React.Component {
         }}
         value={this.state.Input_6}
         onChangeText={nextValue => this.setState({ Input_6: nextValue })}
+      />
+      <Radio
+        text="Radio button"
+        disabled={false}
+        style={{
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          textAlign: "left",
+          verticalAlign: "baseline",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0
+        }}
+        checked={this.state.Radio_10}
+        onChange={nextChecked => this.setState({ Radio_10: nextChecked })}
+      />
+      <Icon
+        iconFont="Eva Design Icons"
+        name="github"
+        width={20}
+        height={20}
+        style={{
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          textAlign: "left",
+          verticalAlign: "baseline",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0,
+          fontSize: 20,
+          color: "#000000",
+          backgroundColor: "#ffffff",
+          fontStyle: "normal",
+          fontWeight: "normal"
+        }}
+      />
+      <CheckBox
+        text="Checkbox"
+        disabled={false}
+        style={{
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          textAlign: "left",
+          verticalAlign: "baseline",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0
+        }}
+        checked={this.state.CheckBox_14}
+        onChange={nextChecked => this.setState({ CheckBox_14: nextChecked })}
+      />
+      <Image
+        resizeMode="cover"
+        style={{
+          width: "100%",
+          height: 200,
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 0,
+          marginBottom: 0,
+          paddingLeft: 0,
+          paddingRight: 0,
+          paddingTop: 0,
+          paddingBottom: 0,
+          overflow: "visible",
+          textAlign: "left",
+          verticalAlign: "baseline",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0
+        }}
+      />
+      <Toggle
+        text="switch ON/OFF"
+        activeColor="#409EFF"
+        inactiveColor="#C0CCDA"
+        disabled={false}
+        style={{
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          textAlign: "left",
+          verticalAlign: "baseline",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0
+        }}
+        checked={this.state.Toggle_19}
+        onChange={nextChecked => this.setState({ Toggle_19: nextChecked })}
       />
     </View>
   )
