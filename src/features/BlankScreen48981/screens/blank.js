@@ -26,8 +26,8 @@ export class _Blank extends React.Component {
     Input_4: "",
     Input_6: "46454654654654646546546",
     Radio_10: true,
-    CheckBox_14: true,
-    Toggle_19: true
+    Toggle_19: true,
+    CheckBox_14: true
   }
 
   render = () => (
@@ -257,6 +257,35 @@ export class _Blank extends React.Component {
           fontWeight: "normal"
         }}
       />
+      <Toggle
+        text="switch ON/OFF"
+        activeColor="#409EFF"
+        inactiveColor="#C0CCDA"
+        disabled={false}
+        style={{
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          textAlign: "left",
+          verticalAlign: "baseline",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0
+        }}
+        checked={this.state.Toggle_19}
+        onChange={nextChecked => this.setState({ Toggle_19: nextChecked })}
+      />
       <CheckBox
         text="Checkbox"
         disabled={false}
@@ -286,6 +315,10 @@ export class _Blank extends React.Component {
       />
       <Image
         resizeMode="cover"
+        source={{
+          uri:
+            "https://d3nfddh2sbo9hk.cloudfront.net/media/project_component_resources/8_aWivoF9.jpg"
+        }}
         style={{
           width: "100%",
           height: 200,
@@ -309,35 +342,6 @@ export class _Blank extends React.Component {
           borderBottomWidth: 0,
           borderRadius: 0
         }}
-      />
-      <Toggle
-        text="switch ON/OFF"
-        activeColor="#409EFF"
-        inactiveColor="#C0CCDA"
-        disabled={false}
-        style={{
-          marginLeft: 0,
-          marginRight: 0,
-          marginTop: 5,
-          marginBottom: 5,
-          paddingLeft: 5,
-          paddingRight: 5,
-          paddingTop: 5,
-          paddingBottom: 5,
-          overflow: "visible",
-          textAlign: "left",
-          verticalAlign: "baseline",
-          borderColor: "#000000",
-          borderStyle: "solid",
-          borderWidth: 0,
-          borderLeftWidth: 0,
-          borderRightWidth: 0,
-          borderTopWidth: 0,
-          borderBottomWidth: 0,
-          borderRadius: 0
-        }}
-        checked={this.state.Toggle_19}
-        onChange={nextChecked => this.setState({ Toggle_19: nextChecked })}
       />
     </View>
   )
