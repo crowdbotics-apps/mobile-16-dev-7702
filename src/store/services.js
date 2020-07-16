@@ -11,7 +11,7 @@ const newPlugin62 = axios.create({
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 const mobile16API = axios.create({
-  baseURL: "https://mobile-16-dev-7702.herokuapp.com/",
+  baseURL: "https://mobile-16-dev-7702.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function api_v1_customtext_list() {
@@ -43,6 +43,24 @@ function api_v1_login_create() {
 }
 function api_v1_signup_create(requestBody) {
   return mobile16API.post(`/api/v1/signup/`, requestBody)
+}
+function api_v1_thfjhfk_list() {
+  return mobile16API.get(`/api/v1/thfjhfk/`)
+}
+function api_v1_thfjhfk_create(requestBody) {
+  return mobile16API.post(`/api/v1/thfjhfk/`, requestBody)
+}
+function api_v1_thfjhfk_read() {
+  return mobile16API.get(`/api/v1/thfjhfk/{id}/`)
+}
+function api_v1_thfjhfk_update(requestBody) {
+  return mobile16API.put(`/api/v1/thfjhfk/{id}/`, requestBody)
+}
+function api_v1_thfjhfk_partial_update(requestBody) {
+  return mobile16API.patch(`/api/v1/thfjhfk/{id}/`, requestBody)
+}
+function api_v1_thfjhfk_delete() {
+  return mobile16API.delete(`/api/v1/thfjhfk/{id}/`)
 }
 function rest_auth_login_create(requestBody) {
   return mobile16API.post(`/rest-auth/login/`, requestBody)
@@ -88,6 +106,12 @@ export const apiService = {
   api_v1_homepage_partial_update,
   api_v1_login_create,
   api_v1_signup_create,
+  api_v1_thfjhfk_list,
+  api_v1_thfjhfk_create,
+  api_v1_thfjhfk_read,
+  api_v1_thfjhfk_update,
+  api_v1_thfjhfk_partial_update,
+  api_v1_thfjhfk_delete,
   rest_auth_login_create,
   rest_auth_logout_list,
   rest_auth_logout_create,
