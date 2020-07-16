@@ -11,7 +11,7 @@ const newPlugin62 = axios.create({
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 const mobile16API = axios.create({
-  baseURL: "https://mobile-16-dev-7702.botics.co/",
+  baseURL: "https://mobile-16-dev-7702.herokuapp.com/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function api_v1_customtext_list() {
