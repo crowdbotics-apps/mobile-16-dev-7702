@@ -9,6 +9,7 @@ from django.db import models
 class CustomText(models.Model):
     title = models.CharField(max_length=150,)
     gfhgfhgfhfhg = models.BigIntegerField(null=True, blank=True,)
+    bvvcbcbvc = models.DateTimeField(null=True, blank=True,)
 
     def __str__(self):
         return self.title
